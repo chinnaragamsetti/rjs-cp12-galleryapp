@@ -77,10 +77,9 @@ const imagesList = [
 
 class Gallery extends Component {
   state = {
-    imageurl:
-      'https://assets.ccbp.in/frontend/react-js/nature-mountain-with-pond-img.png',
+    imageurl:imagesList[0].imageUrl,
     imageAltText:
-      'https://assets.ccbp.in/frontend/react-js/nature-mountain-with-pond-thumbnail-img.png',
+      'imageAltText',
   }
 
   changeimage = (imageUrl, imageAltText) => {
@@ -92,7 +91,7 @@ class Gallery extends Component {
     return (
       <div className="maincontainer">
         <img src={imageUrl} className="mainimage" alt={imageAltText} />
-        <p className="para1">Nature Photography</p>
+        <h1 className="para1">Nature Photography</h1>
         <p className="para2">Nature Photography by Rahul</p>
         <ul className="photoslist">
           {imagesList.map(eachimage => (
