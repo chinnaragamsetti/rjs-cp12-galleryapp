@@ -1,0 +1,28 @@
+/* Write your code here. */
+
+.maincontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 100vh;
+}
+.mainimage {
+  width: 100%;
+  border-radius: 8px;
+  height: 60%;
+}
+.para1 {
+  font-size: 20px;
+  color: #1e293b;
+}
+.para2 {
+  font-size: 10px;
+  color: #64748b;
+}
+.photoslist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
