@@ -2,19 +2,20 @@
 
 .maincontainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 10px;
+
+  padding: 40px;
   height: 100vh;
 }
 .mainimage {
-  width: 100%;
   border-radius: 8px;
   height: 60%;
 }
 .para1 {
   font-size: 20px;
   color: #1e293b;
+  font-weight: bold;
 }
 .para2 {
   font-size: 10px;
@@ -23,6 +24,7 @@
 .photoslist {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
+  padding-left: 0px;
+  list-style-type: none;
 }

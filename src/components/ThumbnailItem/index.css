@@ -1,14 +1,12 @@
 /* Write your code here. */
 .eachlistimagecontainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0.5;
+  opacity: 0.3;
+  margin-right: 10px;
 }
 .blurredimage {
-  opacity: 0;
+  opacity: 1;
 }
 .eachimagelist {
-  width: 25px;
+  width: 40px;
   height: auto;
 }

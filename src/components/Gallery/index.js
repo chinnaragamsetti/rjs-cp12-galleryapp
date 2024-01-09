@@ -77,22 +77,20 @@ const imagesList = [
 
 class Gallery extends Component {
   state = {
-    imageurl:
-      'https://assets.ccbp.in/frontend/react-js/nature-mountain-with-pond-img.png',
-    imageAltText:
-      'https://assets.ccbp.in/frontend/react-js/nature-mountain-with-pond-thumbnail-img.png',
+    imageurl: imagesList[0].imageUrl,
+    imagealttext: imageList[0].imageAltText,
   }
 
   changeimage = (imageUrl, imageAltText) => {
-    this.setState({imageUrl: imageUrl, imageAltText: imageAltText})
+    this.setState({imageurl: imageUrl, imagealttext: imageAltText})
   }
 
   render() {
-    const {imageUrl, imageAltText} = this.state
+    const {imageurl, imagealttext} = this.state
     return (
       <div className="maincontainer">
-        <img src={imageUrl} className="mainimage" alt={imageAltText} />
-        <p className="para1">Nature Photography</p>
+        <img src={imageurl} className="mainimage" alt={imagealttext} />
+        <h1 className="para1">Nature Photography</h1>
         <p className="para2">Nature Photography by Rahul</p>
         <ul className="photoslist">
           {imagesList.map(eachimage => (
@@ -100,7 +98,7 @@ class Gallery extends Component {
               imagedetails={eachimage}
               key={eachimage.id}
               changeimage={this.changeimage}
-              isActive={eachimage.imageUrl === imageUrl}
+              isActive={eachimage.imageUrl === imageurl}
             />
           ))}
         </ul>
