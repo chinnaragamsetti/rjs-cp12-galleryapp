@@ -77,8 +77,14 @@ const imagesList = [
 
 class Gallery extends Component {
   state = {
+<<<<<<< HEAD
     imageurl: imagesList[0].imageUrl,
     imagealttext: imageList[0].imageAltText,
+=======
+    imageurl:imagesList[0].imageUrl,
+    imageAltText:
+      'imageAltText',
+>>>>>>> c3dd3ab6df2fe46534f45efb0a42d29d2508bba2
   }
 
   changeimage = (imageUrl, imageAltText) => {
@@ -89,7 +95,11 @@ class Gallery extends Component {
     const {imageurl, imagealttext} = this.state
     return (
       <div className="maincontainer">
+<<<<<<< HEAD
         <img src={imageurl} className="mainimage" alt={imagealttext} />
+=======
+        <img src={imageUrl} className="mainimage" alt={imageAltText} />
+>>>>>>> c3dd3ab6df2fe46534f45efb0a42d29d2508bba2
         <h1 className="para1">Nature Photography</h1>
         <p className="para2">Nature Photography by Rahul</p>
         <ul className="photoslist">
