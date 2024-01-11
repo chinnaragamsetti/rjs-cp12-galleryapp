@@ -10,15 +10,14 @@ const ThumbnailItem = props => {
     changeimage(imageUrl, imageAltText)
   }
   return (
-    <li
-      className={`eachlistimagecontainer ${activetab}`}
-      onClick={onChangeimage}
-    >
-      <img
-        src={thumbnailUrl}
-        alt={thumbnailAltText}
-        className="eachimagelist"
-      />
+    <li className={`eachlistimagecontainer ${activetab}`}>
+      <button type="button" className="button" onClick={onChangeimage}>
+        <img
+          src={thumbnailUrl}
+          alt={thumbnailAltText}
+          className="eachimagelist"
+        />
+      </button>
     </li>
   )
 }
